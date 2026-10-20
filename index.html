@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Portal Layanan Kepegawaian Cabdin Banyuwangi</title>
+    <!-- Font Inter & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Decoration Overlay -->
+    <div class="bg-glow blob-1"></div>
+    <div class="bg-glow blob-2"></div>
+
+    <div class="container">
+        <!-- Brand & Info Panel (Left side) -->
+        <div class="panel-info">
+            <div class="brand-header">
+                <div class="logo-box">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div>
+                    <h1>Cabdin Banyuwangi</h1>
+                    <p>Dinas Pendidikan Provinsi Jawa Timur</p>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <h2>Sistem Layanan Kepegawaian Terpadu</h2>
+                <p>Portal resmi pelayanan administrasi kepegawaian bagi ASN, Guru, dan Tenaga Kependidikan Wilayah Kabupaten Banyuwangi.</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Akses terintegrasi & aman</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>Pengurusan dokumen real-time</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Bantuan & Layanan Responsif</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-footer">
+                <p>&copy; 2026 Cabang Dinas Pendidikan Wilayah Kab. Banyuwangi</p>
+            </div>
+        </div>
+
+        <!-- Login Form Panel (Right side) -->
+        <div class="panel-form">
+            <div class="form-header">
+                <h3>Selamat Datang</h3>
+                <p>Silakan masuk menggunakan akun NIP / Username Anda</p>
+            </div>
+
+            <!-- Alert Notification -->
+            <div id="alertBox" class="alert hidden">
+                <i class="fa-solid fa-circle-exclamation" id="alertIcon"></i>
+                <span id="alertMessage">NIP atau Password salah.</span>
+            </div>
+
+            <form id="loginForm" novalidate>
+                <!-- Input NIP / Username -->
+                <div class="input-group">
+                    <label for="username">NIP / Username</label>
+                    <div class="input-wrapper">
+                        <i class="fa-regular fa-user icon"></i>
+                        <input type="text" id="username" placeholder="Masukkan 18 digit NIP" required autocomplete="username">
+                    </div>
+                    <span class="error-text" id="usernameError"></span>
+                </div>
+
+                <!-- Input Password -->
+                <div class="input-group">
+                    <label for="password">Kata Sandi</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <input type="password" id="password" placeholder="••••••••" required autocomplete="current-password">
+                        <button type="button" class="btn-toggle-password" id="togglePassword" aria-label="Tampilkan Password">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                    <span class="error-text
